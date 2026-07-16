@@ -4,8 +4,6 @@ package com.matheus.agendadortarefas.insfrastucture.security;
 
 import com.matheus.agendadortarefas.business.dto.UsuarioDTO;
 import com.matheus.agendadortarefas.insfrastucture.client.UsuarioClient;
-import com.matheus.usuario.infrastructure.entity.Usuario;
-import com.matheus.usuario.infrastructure.repository.UsuarioRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.userdetails.User;
 import org.springframework.security.core.userdetails.UserDetails;
