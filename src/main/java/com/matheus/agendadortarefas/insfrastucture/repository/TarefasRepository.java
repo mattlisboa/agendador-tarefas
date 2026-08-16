@@ -1,6 +1,7 @@
 package com.matheus.agendadortarefas.insfrastucture.repository;
 
 import com.matheus.agendadortarefas.insfrastucture.entity.TarefasEntity;
+import com.matheus.agendadortarefas.insfrastucture.enums.StatusNotificacaoEnum;
 import org.springframework.data.mongodb.repository.MongoRepository;
 import org.springframework.stereotype.Repository;
 
@@ -8,9 +9,11 @@ import java.time.LocalDateTime;
 import java.util.List;
 
 @Repository
-public interface TarefasRepository extends MongoRepository<TarefasEntity , String> {
+public interface TarefasRepository extends MongoRepository<TarefasEntity, String> {
 
     List<TarefasEntity> findByDataEventoBetween(LocalDateTime dataInicial, LocalDateTime dataFinal);
 
-    List<TarefasEntity> findByEmailUsuario (String email);
+    List<TarefasEntity> findByEmailUsuario(String email);
+
+
 }
